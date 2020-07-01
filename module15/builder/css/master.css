@@ -1,0 +1,119 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    overflow-x: hidden;
+}
+
+.comment_container {
+    width: 80%;
+    min-width: 300px;
+    min-height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    border-radius: 10px;
+
+    background-color: #f4f4f4;
+
+    font-size: 18px;
+}
+
+form {
+    padding: 20px;
+    margin-top: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    background-color: #fff;
+}
+
+input {
+    width: 100%;
+
+    padding: 20px;
+    border-radius: 5px;
+
+    background-color: #8fbcff;
+
+    color: #030303bb;
+}
+
+input[name="author"] {
+    width: 30%;
+    display: inline-block;
+
+    margin-bottom: 10px;
+}
+
+input[name="comment"] {
+    width: 200px;
+    display: inline-block;
+
+    margin-left: 30px;
+
+    cursor: pointer;
+    transition: .1s;
+}
+
+input[name="comment"]:hover {
+    background-color: #2e82ff;
+}
+
+/*  */
+
+.comment_zone {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.comment {
+    position: relative;
+
+    margin: 20px auto 20px 0;
+}
+
+.delete {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+
+    background-color: #f00;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/cross.png);
+
+    cursor: pointer;
+}
+
+.comment_text {
+    margin-top: 10px;
+
+    font-size: 18px;
+    color: #06f;
+}
+
+.comment_author, .comment_date {
+    display: inline-block;
+}
+
+.comment_author {
+    color: #32cc1f;
+}
+
+.comment_date {
+    color: #ff1414;
+}
